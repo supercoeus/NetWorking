@@ -1,15 +1,29 @@
 package com.erhu.project.networking;
 
-import java.util.List;
-
 public class UserResponse extends BaseResponse {
-    List<User> users;
 
-    public List<User> getUsers() {
-        return users;
+    private DataEntity data;
+
+    public DataEntity getData() {
+        return data;
     }
 
-    public void setUsers(List<User> users) {
-        this.users = users;
+    public void setData(DataEntity data) {
+        this.data = data;
+    }
+
+    public static class DataEntity {
+
+        private User user;
+
+        public User getUser() {
+            return user;
+        }
+
+        public void setUser(User user) {
+            this.user = user;
+        }
+
+
     }
 }
